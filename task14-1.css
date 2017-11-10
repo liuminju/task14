@@ -1,0 +1,473 @@
+@charset "utf-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  /* 容易引起table 单元格垂直对齐问题*/
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+a {
+  text-decoration: none;
+}
+.clearfix {
+  display: inline-block;
+}
+/* Hide from IE Mac */
+.clearfix {
+  display: block;
+}
+/* End hide from IE Mac */
+/* end of clearfix */
+body {
+  background-color: #fafafa;
+}
+header div {
+  display: inline-block;
+}
+.head1 {
+  line-height: 35px;
+  width: 165px;
+  color: #29b078;
+  height: 35px;
+}
+.head2 {
+  width: 130px;
+}
+.head2 img {
+  width: 25px;
+  height: 24px;
+  margin-left: 15px;
+}
+#container {
+  position: relative;
+  width: 100%;
+  height: 30vw;
+  overflow: hidden;
+  /*隐藏溢出的图片*/
+}
+.pic {
+  width: 300%;
+  position: absolute;
+  margin-left: 0;
+  animation-name: focusmap;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+#container img {
+  float: left;
+  width: 33.33333333%;
+  height: 30vw;
+}
+@keyframes focusmap {
+  0% {
+    margin-left: 0;
+  }
+  23% {
+    margin-left: 0;
+  }
+  33% {
+    margin-left: -100%;
+  }
+  56% {
+    margin-left: -100%;
+  }
+  66% {
+    margin-left: -200%;
+  }
+  90% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+section {
+  margin-left: 10%;
+  margin-right: 10%;
+  overflow: hidden;
+}
+.show {
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  padding: 35px 30px;
+}
+.show1 {
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  padding: 35px 30px;
+}
+.photo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-end;
+  height: 70px;
+}
+.name {
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+}
+.detial {
+  font-size: 12px;
+}
+.show-num {
+  float: left;
+  width: 25%;
+  box-sizing: border-box;
+  padding: 35px 30px;
+}
+.show-num div {
+  margin-top: 35px;
+}
+.show-num p {
+  line-height: 23px;
+  font-size: 15px;
+}
+.show-num span {
+  color: #29b078;
+}
+.student .show {
+  margin: 0 5px;
+  padding: 10px 20px;
+  background: #fff;
+  box-shadow: 0 0 10px grey;
+}
+.student .show .icon {
+  background: url(img/ms.png) no-repeat center center;
+}
+.student .show span {
+  word-break: break-all;
+}
+.student-icon {
+  padding: 10px;
+  text-align: center;
+}
+.student-icon .icon {
+  border: 1px solid #29b078;
+}
+.student-icon .icon:hover {
+  background: #29b078;
+}
+@media (max-width: 680px) {
+  .show {
+    width: 50%;
+  }
+  .show1 {
+    width: 50%;
+    clear: left;
+  }
+  .show-num {
+    width: 50%;
+  }
+}
+.step {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 1px #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #29b078;
+  font-size: 18px;
+  float: left;
+  background-color: #fff;
+}
+.step2 {
+  display: block;
+  height: 70px;
+  width: 150px;
+  line-height: 35px;
+  float: left;
+  margin-left: 10px;
+}
+.step3 {
+  float: left;
+  height: 20px;
+  width: 20px;
+}
+.step4 {
+  height: 20px;
+  width: 20px;
+}
+.row-1 {
+  display: flex;
+  align-items: center;
+  width: 25%;
+  float: left;
+}
+.row {
+  margin-right: 10%;
+  margin-left: 10%;
+  overflow: hidden;
+  margin-top: 50px;
+}
+h3 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding-top: 20px;
+}
+@media (max-width: 680px) {
+  .row-1 {
+    width: 50%;
+  }
+}
+@media (max-width: 490px) {
+  .row-1 {
+    width: 100%;
+  }
+  .show {
+    width: 100%;
+  }
+  .show1 {
+    width: 100%;
+    clear: left;
+  }
+  .show-num {
+    width: 100%;
+  }
+}
+.row-2 {
+  width: 25%;
+  float: left;
+}
+.home-section-student {
+  position: relative;
+  margin: 20px 5px;
+  background-color: #fff;
+  color: #b8b8b8;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 10px;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .row-2 {
+    width: 50%;
+  }
+}
+@media (max-width: 450px) {
+  .row-2 {
+    width: 100%;
+  }
+}
+.img-icon {
+  width: 20%;
+  height: 180px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.img-icon:hover {
+  box-shadow: 3px 3px 3px #ccc;
+}
+.icon-img {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+@media (max-width: 1050px) {
+  .img-icon {
+    width: 25%;
+  }
+}
+@media (max-width: 850px) {
+  .img-icon {
+    width: 50%;
+  }
+}
+@media (max-width: 450px) {
+  .img-icon {
+    width: 100%;
+  }
+}
+.row-3 {
+  margin-left: 10%;
+  margin-right: 10%;
+  overflow: hidden;
+}
+.link {
+  float: left;
+  width: 10%;
+  color: #999;
+}
+.link-1 {
+  font-size: .5rem;
+  color: #999;
+  height: 2rem;
+  line-height: 2rem;
+}
+.link-3 {
+  margin: 0;
+  padding: 0;
+}
+.link-1:hover {
+  color: #999;
+}
+@media (max-width: 600px) {
+  .link {
+    width: 20%;
+  }
+}
+.row-4 {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+.row4,
+.row2 {
+  float: left;
+}
+.row4 {
+  width: 40%;
+}
+.row4 p {
+  margin-top: 10px;
+}
+.row2 {
+  width: 20%;
+}
+.row2 div {
+  margin-top: 10px;
+}
+@media (max-width: 550px) {
+  .row4 {
+    width: 100%;
+  }
+  .row2 {
+    width: 100%;
+  }
+}
